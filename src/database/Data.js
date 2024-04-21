@@ -1,5 +1,7 @@
 
-import { svg1, svg2, svg3 } from "../assets";
+import { svg1, svg2, svg3 , } from "../assets";
+
+
 
 export const tradingStyles = [
   {
@@ -21,7 +23,7 @@ export const tradingStyles = [
     image: svg2,
   },
   {
-    id: "One-step",
+    id: "OneStep",
     name: "One-step",
     profitTarget: "10% Profit Target",
     dailyDrawdown: "3% Daily Drawdown",
@@ -104,42 +106,141 @@ export const asideLinks = [
 ];
 
 
+
+
 export const formData1 = [
-  {
-    label: "Country",
-    type: "text",
-    id: "country",
-    placeholder: "Enter your country",
-  },
-  {
-    label: "Challenge Type",
-    type: "select",
-    id: "challengeType",
-    options: ["Type 1", "Type 2", "Type 3"],
-  },
-  {
-    label: "Simulated Account Size",
-    type: "number",
-    id: "accountSize",
-    placeholder: "Enter account size",
-  },
-  {
-    label: "Platform",
-    type: "text",
-    id: "platform",
-    placeholder: "Enter platform name",
-  },
-  {
-    label: "Broker",
-    type: "text",
-    id: "broker",
-    placeholder: "Enter broker name",
-  },
-  {
-    label: "Account Type",
-    type: "text",
-    id: "accountType",
-    placeholder: "Enter account type",
-  },
-  
+  [
+    {
+      id: 1,
+      label: "Country",
+      type: "text",
+      placeholder: "Enter your country",
+    },
+    {
+      id: 2,
+      label: "Challenge Type",
+      type: "select",
+      options: ["Type 1", "Type 2", "Type 3"],
+    },
+  ],
+  [
+    {
+      id: 3,
+      label: "Simulated Account Size",
+      type: "number",
+      placeholder: "Enter account size",
+    },
+    {
+      id: 4,
+      label: "Platform",
+      type: "text",
+      placeholder: "Enter platform name",
+    },
+  ],
+  [
+    {
+      id: 5,
+      label: "Broker",
+      type: "text",
+      placeholder: "Enter broker name",
+    },
+    {
+      id: 6,
+      label: "Account Type",
+      type: "text",
+      placeholder: "Enter account type",
+    },
+  ],
 ];
+
+export const formData2 = [
+  [
+    {
+      id: 7,
+      label: "First Name",
+      type: "text",
+      placeholder: "Enter your first name",
+    },
+    {
+      id: 8,
+      label: "Last Name",
+      type: "text",
+      placeholder: "Enter your last name",
+    },
+    {
+      id: 9,
+      label: "Email",
+      type: "email",
+      placeholder: "Enter your email",
+    },
+    {
+      id: 10,
+      label: "Phone Number",
+      type: "number",
+      placeholder: "Enter your phone number",
+    },
+    {
+      id: 11,
+      label: "Address Line 1",
+      type: "number",
+      placeholder: "Enter your Address Line ",
+    },
+    {
+      id: 12,
+      label: "Town / City",
+      type: "text",
+      placeholder: "Enter Town / City",
+    },
+    {
+      id: 13,
+      label: "State/Region/ Province",
+      type: "text",
+      placeholder: "Enter State/Region/ Province",
+    },
+    {
+      id: 14,
+      label: "Country",
+      type: "text",
+      placeholder: "Enter Country",
+    },
+    {
+      id: 15,
+      label: "Additional Notes",
+      type: "text",
+      placeholder: "Additional Notes",
+    },
+  ],
+  [
+    {
+      id: 16,
+      label: "Phone Number",
+      type: "tel",
+      placeholder: "Enter your phone number",
+    },
+    {
+      id: 17,
+      label: "Address",
+      type: "text",
+      placeholder: "Enter your address",
+    },
+  ],
+];
+
+export const billInfoData = {
+  billTo: {
+    name: "Josiah Omorojoe",
+    country: "NG",
+  },
+  contact: "08112346383",
+  date: "April 17, 2024",
+  description: [
+    { icon: "sym1", text: "Challenge Type" },
+    { icon: "sym2", text: "Account Type" },
+    { icon: "sym3", text: "Platform" },
+    { icon: "sym4", text: "Broker" },
+  ],
+  amount: {
+    express: "$5,000.00",
+    mt5: "--",
+  },
+};
