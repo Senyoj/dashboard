@@ -3,7 +3,7 @@ import { formData1, formData2, billInfoData } from "../../database/Data";
 import { Link } from "react-router-dom";
 import { sym1, sym2, sym3, sym4, ton } from "../../assets";
 
-function  Onestep() {
+function   OneStep() {
   const [currentSection, setCurrentSection] = useState(0);
   const [showForm, setShowForm] = useState(true);
 
@@ -29,7 +29,7 @@ function  Onestep() {
     <div className="bg-back p-2">
       <div>
         <div className="header pl-10">
-          <h1 className="text-xl font-semibold"> Onestep</h1>
+          <h1 className="text-xl font-semibold">  OneStep</h1>
           <p className="opacity-75 pb-5">Challenge</p>
           <div className="w-full h-1 bg-white opacity-20"></div>
         </div>
@@ -39,16 +39,12 @@ function  Onestep() {
             <form className="space-y-4">
               {formData[currentSection].map((section, index) => (
                 <div key={index}>
-                  <div>
-                    <h1 className="text-lg font-semibold pb-5 flex">
-                      Challenge details
-                    </h1>
-                  </div>
+                  
                   {section.map((item) => (
                     <div key={item.id} className="flex items-center space-y-2">
                       <label
                         htmlFor={item.id}
-                        className="block font-semibold text-lg w-[400px]"
+                        className="block font-semibold text-lg lg:w-[400px]"
                       >
                         {item.label}
                       </label>
@@ -99,9 +95,9 @@ function  Onestep() {
           )}
           {!showForm && (
             <div className="last-part ">
-              <div className="BillInfo flex justify-between ">
-                <div className="">
-                  <div className=" border-r-2 w-[300px]">
+              <div className="BillInfo flex justify-between flex-col lg:flex-row">
+                <div className="mb-5 lg:mb-0 lg:mr-5">
+                  <div className=" border-r-2 lg:w-[300px]">
                     <section className="py-5 text-xl">
                       <h1 className="text-iconT">Bill To</h1>
                       <p>
@@ -119,18 +115,15 @@ function  Onestep() {
                     </section>
                   </div>
                 </div>
-                <div className="w-full px-2 text-xl flex justify-between">
+                <div className="w-full lg:w-[calc(100%-300px)] px-2 text-xl flex justify-between">
                   <div>
-                    <div className=" border-b-2 pb-10 pl-5 w-[400px]">
+                    <div className=" border-b-2 pb-10 pl-5">
                       <h1>Description</h1>
                     </div>
-                    <div className=" p-5">
+                    <div className="p-5">
                       <div className="flex flex-col gap-5">
                         {billInfoData.description.map((item, index) => (
-                          <span
-                            key={index}
-                            className="flex  items-center gap-2"
-                          >
+                          <span key={index} className="flex items-center gap-2">
                             <img src={item.icon} alt="" />
                             <p>{item.text}</p>
                           </span>
@@ -138,13 +131,13 @@ function  Onestep() {
                       </div>
                     </div>
                   </div>
-                  <div className="   ">
-                    <div className=" border-b-2 pb-10 pl-5 w-[400px] text-end">
+                  <div>
+                    <div className=" border-b-2 pb-10 pl-5 text-end">
                       <h1>Amount</h1>
                     </div>
                     <div className="text-end flex flex-col gap-5 pt-5">
-                      <p>Express</p>
-                      <p>{billInfoData.amount.express}</p>
+                      <p> OneStep</p>
+                      <p>{billInfoData.amount. OneStep}</p>
                       <p>MT5</p>
                       <p>{billInfoData.amount.mt5}</p>
                     </div>
@@ -152,8 +145,8 @@ function  Onestep() {
                 </div>
               </div>
               <div className="pt-20">
-                <div className=" border-b-2 w-1/3"></div>
-                <div className="flex justify-between items-center">
+                <div className=" border-b-2 w-full lg:w-1/3"></div>
+                <div className="flex flex-col lg:flex-row  justify-between items-center">
                   <div className="pt-5">
                     <h1 className="text-xl py-5">BANK TRANSFER</h1>
                     <div className="flex flex-col gap-3">
@@ -173,7 +166,7 @@ function  Onestep() {
                       </div>
                       <div className="flex items-center gap-3">
                         <label
-                          htmlFor="Affiliate Code"
+                          htmlFor="Discount Code"
                           className="block font-semibold text-lg w-[150px]"
                         >
                           Discount Code
@@ -187,12 +180,12 @@ function  Onestep() {
                       </div>
                     </div>
                   </div>
-                  <div>
+                  <div className="py-10">
                     <button className="flex gap-20 justify-between items-center bg-ton py-5 px-10 rounded-lg relative">
                       <img
                         src={ton}
                         alt=""
-                        className=" absolute right-10 top-0"
+                        className="absolute right-10 top-0"
                       />
                       <div>
                         <h1 className="text-xl font-semibold">TOTAL</h1>
@@ -216,7 +209,7 @@ function  Onestep() {
                 <button
                   type="button"
                   onClick={handleSubmit}
-                  className="bg-bag  px-10 py-2 rounded-lg text-white font-semibold"
+                  className="bg-bag px-10 py-2 rounded-lg text-white font-semibold"
                 >
                   <Link to="/dashboard">Proceed</Link>
                 </button>
@@ -229,4 +222,4 @@ function  Onestep() {
   );
 }
 
-export default  Onestep;
+export default   OneStep;

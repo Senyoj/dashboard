@@ -8,7 +8,7 @@ function DashMain() {
       <div className="pb-10">
         <h1 className="text-xl font-semibold">Choose your trading Style</h1>
       </div>
-      <div className="flex  ">
+      <div className="flex flex-col lg:flex-row lg:gap-0 gap-2  ">
         {tradingStyles.map((style) => (
           <div
             key={style.id}
@@ -39,7 +39,7 @@ function DashMain() {
 
         <div>
           <div>
-            <ul className="flex flex-col gap-2 px-5">
+            <ul className="flex flex-row  lg:flex-col justify-center gap-2 px-5">
               <li className="bg-sun p-2 rounded-lg border-[1px] ">
                 <Icon
                   icon="fa-regular:paper-plane"
