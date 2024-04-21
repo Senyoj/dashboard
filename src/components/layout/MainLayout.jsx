@@ -27,6 +27,7 @@ function MainLayout() {
         <TopNavbar />
         <div className="p-4 ">
           <Routes>
+            <Route path="/" element={<DashMain />} />
             <Route path="/challenge/Evaluation" element={<Evaluation />} />
             <Route path="/challenge/Express" element={<Express />} />
             <Route path="/challenge/OneStep" element={<OneStep />} />
