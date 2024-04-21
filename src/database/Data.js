@@ -1,5 +1,5 @@
 
-import { svg1, svg2, svg3 , } from "../assets";
+import { svg1, svg2, svg3 , sym1,sym2 , sym3 , sym4 } from "../assets";
 
 
 
@@ -234,10 +234,10 @@ export const billInfoData = {
   contact: "08112346383",
   date: "April 17, 2024",
   description: [
-    { icon: "sym1", text: "Challenge Type" },
-    { icon: "sym2", text: "Account Type" },
-    { icon: "sym3", text: "Platform" },
-    { icon: "sym4", text: "Broker" },
+    { icon: sym1, text: "Challenge Type" },
+    { icon: sym2, text: "Account Type" },
+    { icon: sym3, text: "Platform" },
+    { icon: sym4, text: "Broker" },
   ],
   amount: {
     express: "$5,000.00",
