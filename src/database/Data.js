@@ -77,7 +77,7 @@ export const asideLinks = [
     id: 7,
     title: "Downloads",
     path: "/downloads",
-    icon: "ic:baseline-download",
+    icon: "bxs:download",
   },
   {
     id: 8,

@@ -2,12 +2,9 @@ import React, { useState } from "react";
 import { formData1, formData2, billInfoData } from "../../database/Data";
 import { Link } from "react-router-dom";
 import { sym1, sym2, sym3, sym4, ton } from "../../assets";
-import { paystack } from "paystack";
 
 function Evaluation() {
-  const paystackClient = paystack(
-    "pk_test_de16f91ec44d9d554c509ea5a9f5fdac888b91db"
-  );
+
   const [currentSection, setCurrentSection] = useState(0);
   const [showForm, setShowForm] = useState(true);
   const formData = [formData1, formData2];
@@ -28,20 +25,7 @@ function Evaluation() {
     console.log("Form submitted!");
   };
 
-  function handlePayment() {
-    paystackClient.charge.card({
-      email: "ahadzijoelsenyo@gmail.com",
-      amount: 500000,
-      currency: "NGN",
-      reference: `${Math.floor(Math.random() * 1000000000) + 1}`,
-      callback: function (response) {
-        console.log(response);
-      },
-      onClose: function () {
-        console.log("Payment closed or failed.");
-      },
-    });
-  }
+
   return (
     <div className="bg-back p-2">
       <div>
@@ -224,7 +208,7 @@ function Evaluation() {
                 </button>
                 <button
                   type="button"
-                  onClick={handlePayment}
+                  onClick={handleSubmit}
                   className="bg-bag px-10 py-2 rounded-lg text-white font-semibold"
                 >
                   <Link to="/dashboard">Proceed</Link>

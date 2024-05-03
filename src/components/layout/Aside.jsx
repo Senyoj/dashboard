@@ -27,12 +27,12 @@ function Aside() {
       </div>
       <aside className={`w-[260px] h-[100vh] pl-5 bg-back p-4 ${showAside ? "block" : "hidden"} lg:block`}>
         <nav className="">
-          <div className="flex items-center gap-3 text-4xl text-iconC font-bold pb-10">
+          <div className="flex items-center gap-3 text-3xl text-iconC font-bold pt-5 pb-10">
             <div>
               <img src={logo} alt="logo" />
             </div>
             <div>
-              <h1>nicholas</h1>
+              <h1>TruFunder</h1>
             </div>
           </div>
           <ul className="">
@@ -45,7 +45,7 @@ function Aside() {
               >
                 <Icon icon={link.icon} className="text-iconC text-2xl" />
                 <Link
-                  className="text-iconT text-xl font-semibold"
+                  className="text-iconT text-lg font-semibold"
                   to={link.path}
                 >
                   {link.title}
