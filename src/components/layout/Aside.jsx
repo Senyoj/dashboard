@@ -17,7 +17,7 @@ function Aside() {
   };
 
   return (
-    <div className="relative">
+    <div className="relative ">
       <div className="absolute lg:hidden -right-10 top-7 bg-sun p-2 rounded-full cursor-pointer" onClick={toggleAside}>
         {showAside ? (
           <Icon icon="fa-solid:times" className="text-iconC text-2xl font-bold" />
@@ -32,7 +32,7 @@ function Aside() {
               <img src={logo} alt="logo" />
             </div>
             <div>
-              <h1>TruFunder</h1>
+              <h1>JBuild</h1>
             </div>
           </div>
           <ul className="">
