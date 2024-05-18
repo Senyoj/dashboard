@@ -79,9 +79,16 @@ const CompetitionDetail = () => {
       {competition.standings.length > 0 && (
         <div className="text-white">
           <div>
-            <h2 className="text-xl font-semibold mb-3">
-              Competition Standings
-            </h2>
+            <div className=" mb-5 flex items-center gap-5">
+              <div>
+                <input type="text" placeholder="Search..." className="w-full h-10 px-3 rounded-lg border-gray-200 border-2 border-opacity-15 bg-transparent outline-none" />
+              </div>
+              <div>
+                <h2 className="text-lg font-semibold">
+                  Competition Standings
+                </h2>
+              </div>
+            </div>
             <table className="w-full text-left">
               <thead>
                 <tr>
