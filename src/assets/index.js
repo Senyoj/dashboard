@@ -8,4 +8,6 @@ import sym2 from "./sym2.svg";
 import sym3 from "./sym3.svg"; 
 import sym4 from "./sym4.svg"; 
 import ton from "./ton.svg"; 
-export { logo, profile, svg1, svg2, svg3,sym1, sym2 , sym3, sym4 , ton};
+import mon from "./mon.png"; 
+
+export { logo, profile, svg1, svg2, svg3,sym1, sym2 , sym3, sym4 , ton  ,mon};

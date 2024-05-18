@@ -35,7 +35,6 @@ const CompetitionDetail = () => {
               </span>
             </div>
           </div>
-          <div></div>
         </div>
 
         <div>
@@ -79,7 +78,7 @@ const CompetitionDetail = () => {
       {competition.standings.length > 0 && (
         <div className="text-white">
           <div>
-            <div className=" mb-5 flex items-center gap-5">
+            <div className="flex items-center gap-5">
               <div>
                 <input type="text" placeholder="Search..." className="w-full h-10 px-3 rounded-lg border-gray-200 border-2 border-opacity-15 bg-transparent outline-none" />
               </div>
