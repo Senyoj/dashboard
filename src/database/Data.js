@@ -1,7 +1,4 @@
-
-import { svg1, svg2, svg3 , sym1,sym2 , sym3 , sym4 } from "../assets";
-
-
+import { svg1, svg2, svg3, sym1, sym2, sym3, sym4 } from "../assets";
 
 export const tradingStyles = [
   {
@@ -32,9 +29,6 @@ export const tradingStyles = [
     image: svg3,
   },
 ];
-
-
-
 
 export const asideLinks = [
   {
@@ -104,9 +98,6 @@ export const asideLinks = [
     icon: "ic:sharp-settings",
   },
 ];
-
-
-
 
 export const formData1 = [
   [
@@ -244,3 +235,294 @@ export const billInfoData = {
     mt5: "--",
   },
 };
+
+export const compMonth = [
+  {
+    id: 1,
+    name: "January Competition",
+    status: "Ended",
+    prize: "$1,000",
+    description: "In cash prizes + Challenge accounts",
+    contestants: 20546,
+    winner: {
+      name: "Obeng Sika",
+      date: "January 2nd, 2024",
+      reward: "$1,000 in cash prize + Challenge accounts",
+    },
+    standings: [
+      {
+        rank: 1,
+        nickname: "Obeng Sika",
+        returnPercent: 57.32,
+        backFromFirst: "-",
+        prize: "$500 Cash + $200,000 Challenge Account",
+        country: "USA",
+      },
+      {
+        rank: 2,
+        nickname: "El Chapo",
+        returnPercent: 45.36,
+        backFromFirst: "3.05",
+        prize: "$200 Cash + $100,000 Challenge Account",
+        country: "Mexico",
+      },
+      {
+        rank: 3,
+        nickname: "Divine",
+        returnPercent: 57.32,
+        backFromFirst: "6.88",
+        prize: "$100 Cash + $100,000 Challenge Account",
+        country: "UK",
+      },
+      {
+        rank: 4,
+        nickname: "Aspiring",
+        returnPercent: 45.36,
+        backFromFirst: "7.55",
+        prize: "$200 Cash + $100,000 Challenge Account",
+        country: "Canada",
+      },
+      {
+        rank: 5,
+        nickname: "Samed",
+        returnPercent: 57.32,
+        backFromFirst: "6.88",
+        prize: "$100 Cash + $100,000 Challenge Account",
+        country: "Ghana",
+      },
+      {
+        rank: 6,
+        nickname: "Daniel",
+        returnPercent: 45.36,
+        backFromFirst: "7.55",
+        prize: "$10,000 Challenge Account",
+        country: "Australia",
+      },
+      {
+        rank: 7,
+        nickname: "Vyrus",
+        returnPercent: 57.32,
+        backFromFirst: "6.88",
+        prize: "$10,000 Challenge Account",
+        country: "Germany",
+      },
+      {
+        rank: 8,
+        nickname: "Skylington",
+        returnPercent: 45.36,
+        backFromFirst: "7.55",
+        prize: "$10,000 Challenge Account",
+        country: "France",
+      },
+      {
+        rank: 9,
+        nickname: "Kwakye",
+        returnPercent: 57.32,
+        backFromFirst: "6.88",
+        prize: "$10,000 Challenge Account",
+        country: "South Africa",
+      },
+      {
+        rank: 10,
+        nickname: "Kepler",
+        returnPercent: 45.36,
+        backFromFirst: "7.55",
+        prize: "$10,000 Challenge Account",
+        country: "Netherlands",
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "February Competition",
+    status: "Ongoing",
+    prize: "$2,000",
+    description: "In cash prizes + Challenge accounts",
+    contestants: 1245,
+    winner: {
+      name: "Jane Doe",
+      date: "February 15th, 2024",
+      reward: "$2,000 in cash prize + Challenge accounts",
+    },
+    standings: [
+      {
+        rank: 1,
+        nickname: "Jane Doe",
+        returnPercent: 60.12,
+        backFromFirst: "-",
+        prize: "$1,000 Cash + $200,000 Challenge Account",
+        country: "USA",
+      },
+      {
+        rank: 2,
+        nickname: "John Smith",
+        returnPercent: 55.36,
+        backFromFirst: "4.76",
+        prize: "$500 Cash + $100,000 Challenge Account",
+        country: "UK",
+      },
+      {
+        rank: 3,
+        nickname: "Chris P.",
+        returnPercent: 53.21,
+        backFromFirst: "6.91",
+        prize: "$200 Cash + $50,000 Challenge Account",
+        country: "Canada",
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "March Competition",
+    status: "Upcoming",
+    prize: "$500",
+    description: "In cash prizes + Challenge accounts",
+    contestants: 8000,
+    winner: {},
+    standings: [],
+  },
+  {
+    id: 4,
+    name: "April Competition",
+    status: "Ended",
+    prize: "$3,000",
+    description: "In cash prizes + Challenge accounts",
+    contestants: 2890,
+    winner: {
+      name: "Alex Johnson",
+      date: "April 20th, 2024",
+      reward: "$3,000 in cash prize + Challenge accounts",
+    },
+    standings: [
+      {
+        rank: 1,
+        nickname: "Alex Johnson",
+        returnPercent: 70.45,
+        backFromFirst: "-",
+        prize: "$1,500 Cash + $300,000 Challenge Account",
+        country: "Australia",
+      },
+      {
+        rank: 2,
+        nickname: "Sammy",
+        returnPercent: 65.32,
+        backFromFirst: "5.13",
+        prize: "$800 Cash + $150,000 Challenge Account",
+        country: "Germany",
+      },
+    ],
+  },
+  {
+    id: 5,
+    name: "May Competition",
+    status: "Ongoing",
+    prize: "$1,500",
+    description: "In cash prizes + Challenge accounts",
+    contestants: 3100,
+    winner: {
+      name: "Morgan Lee",
+      date: "May 25th, 2024",
+      reward: "$1,500 in cash prize + Challenge accounts",
+    },
+    standings: [
+      {
+        rank: 1,
+        nickname: "Morgan Lee",
+        returnPercent: 80.1,
+        backFromFirst: "-",
+        prize: "$750 Cash + $250,000 Challenge Account",
+        country: "South Korea",
+      },
+      {
+        rank: 2,
+        nickname: "Charlie Brown",
+        returnPercent: 75.5,
+        backFromFirst: "4.60",
+        prize: "$500 Cash + $100,000 Challenge Account",
+        country: "USA",
+      },
+    ],
+  },
+  {
+    id: 6,
+    name: "June Competition",
+    status: "Upcoming",
+    prize: "$2,500",
+    description: "In cash prizes + Challenge accounts",
+    contestants: 4100,
+    winner: {},
+    standings: [],
+  },
+  {
+    id: 7,
+    name: "July Competition",
+    status: "Ended",
+    prize: "$1,200",
+    description: "In cash prizes + Challenge accounts",
+    contestants: 1900,
+    winner: {
+      name: "Patricia Fields",
+      date: "July 30th, 2024",
+      reward: "$1,200 in cash prize + Challenge accounts",
+    },
+    standings: [
+      {
+        rank: 1,
+        nickname: "Patricia Fields",
+        returnPercent: 55.32,
+        backFromFirst: "-",
+        prize: "$600 Cash + $150,000 Challenge Account",
+        country: "Brazil",
+      },
+      {
+        rank: 2,
+        nickname: "Mark Z.",
+        returnPercent: 52.14,
+        backFromFirst: "3.18",
+        prize: "$300 Cash + $75,000 Challenge Account",
+        country: "USA",
+      },
+    ],
+  },
+  {
+    id: 8,
+    name: "August Competition",
+    status: "Ongoing",
+    prize: "$3,200",
+    description: "In cash prizes + Challenge accounts",
+    contestants: 2200,
+    winner: {
+      name: "Lucas M.",
+      date: "August 15th, 2024",
+      reward: "$3,200 in cash prize + Challenge accounts",
+    },
+    standings: [
+      {
+        rank: 1,
+        nickname: "Lucas M.",
+        returnPercent: 60.45,
+        backFromFirst: "-",
+        prize: "$1,600 Cash + $300,000 Challenge Account",
+        country: "Argentina",
+      },
+      {
+        rank: 2,
+        nickname: "Isabella R.",
+        returnPercent: 58.32,
+        backFromFirst: "2.13",
+        prize: "$800 Cash + $150,000 Challenge Account",
+        country: "Spain",
+      },
+    ],
+  },
+  {
+    id: 9,
+    name: "September Competition",
+    status: "Upcoming",
+    prize: "$4,000",
+    description: "In cash prizes + Challenge accounts",
+    contestants: 4700,
+    winner: {},
+    standings: [],
+  },
+];

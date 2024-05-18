@@ -16,7 +16,7 @@ import Analysis from "../../pages/Analysis";
 import Leaderboard from "../../pages/Leaderboard";
 import Settings from "../../pages/Settings";
 import Statistics from "../../pages/Statistics";
-
+import CompetitionDetail from "../subsets/CompetitionDetail"
 function MainLayout() {
   return (
     <div className="flex bg-row text-white">
@@ -35,6 +35,7 @@ function MainLayout() {
             <Route path="/statistics" element={<Statistics />} />
             <Route path="/leaderboard" element={<Leaderboard />} />
             <Route path="/competition" element={<Competition />} />
+            <Route path="/competition/:id" element={<CompetitionDetail/>} />
             <Route path="/certificates" element={<Certificates />} />
             <Route path="/billing" element={<Billing />} />
             <Route path="/affiliate" element={<AffiliatePortal />} />
